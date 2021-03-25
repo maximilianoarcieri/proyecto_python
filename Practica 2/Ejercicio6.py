@@ -1,20 +1,18 @@
 frase = """
-Si trabajás mucho CON computadoras, eventualmente encontrarás que te gustaría
-automatizar alguna tarea. Por ejemplo, podrías desear realizar una búsqueda y
-reemplazo en un gran número DE archivos de texto, o renombrar y reorganizar
-un montón de archivos con fotos de una manera compleja. Tal vez quieras
-escribir alguna pequeña base de datos personalizada, o una aplicación
-especializada con interfaz gráfica, o UN juego simple.
+Si trabajas mucho CON computadoras, eventualmente encontraras que te gustaria
+automatizar alguna tarea. Por ejemplo, podrias desear realizar una busqueda y
+reemplazo en un gran numero DE archivos de texto, o renombrar y reorganizar
+un monton de archivos con fotos de una manera compleja. Tal vez quieras
+escribir alguna pequena base de datos personalizada, o una aplicacion
+especializada con interfaz grafica, o UN juego simple.
 """
 
 frase = frase.split()
-print(frase)
 
 lista = []
 
-
 for palabra in frase:
-    if lista.count(palabra) == 0:
+    if lista.count(palabra.lower()) == 0:
         lista.append(palabra.lower())
 
 print(lista)
